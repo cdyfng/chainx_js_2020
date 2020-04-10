@@ -1,0 +1,23 @@
+{
+  "name": "chainx-new",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@polkadot/api": "0.90.0-beta.22",
+    "chainx.js": "^2.22.32",
+    "lodash": "^4.17.15",
+    "rxjs": "^6.5.2",
+    "tweetnacl": "^1.0.1"
+  },
+  "description": "New Api Access For Chainx",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Chainx",
+    "API"
+  ],
+  "author": "cdyfng"
+}

@@ -1,0 +1,11 @@
+var config = {
+  // debug ��?true 时，用于本地调试
+  debug: true,
+
+   accounts: ['', 
+   ],
+
+   node: '',
+ };
+
+module.exports = config;
