@@ -17,6 +17,7 @@ let processing = false;
 
   let cnt = 0
   let size = _.size(config.accounts)
+  let total_pcx = 0
 
   console.log('accounts:', config.accounts)
   let loop = async function() {
@@ -41,10 +42,13 @@ let processing = false;
       let total_L_BTC = getL_BTC[0].details.Free + getL_BTC[0].details.ReservedStaking + getL_BTC[0].details.ReservedStakingRevocation;
  
       console.log('account:', account, ': ', totalPCX/1e8, total_L_BTC/1e8)
+      total_pcx += totalPCX/1e8
 
       await sleep(1000)
       i++
     }
+
+    console.log('total PCX:', total_pcx)
   }
 
 loop()
