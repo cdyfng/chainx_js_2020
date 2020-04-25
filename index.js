@@ -82,6 +82,7 @@ let processing = false;
     }
 
     console.log("total PCX:", total_pcx, ",total XBTC:", total_xbtc);
+    process.exit(1);
   };
 
   loop();
